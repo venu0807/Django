@@ -1,0 +1,33 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Solved Cases Page</title>
+    <link rel="stylesheet" href="{% static  "stylesheets/style.css" %}"/>
+</head>
+<body>
+    <h1>Solved Cases</h1><br><br><br>
+
+    <table border="1" id="solved">
+        <tr>
+        <th>I.D</th>   
+        <th>Name</th>
+        <th>Father Name</th>
+        <th>Age</th>
+        <th>Cause Of Complaint</th>
+        <th>Contact</th>
+        </tr>
+        {% for i in allsolved %}
+        <tr>
+        <td>{{i.id}}</td>  
+        <td>{{i.name}}</td>
+        <td>{{i.fathername}}</td>
+        <td>{{i.age}}</td>
+        <td>{{i.causeofcomplaint}}</td>
+        <td>{{i.contact}}</td>
+        </tr>
+         {% endfor %}       
+    </table>   
+</body>
+</html>

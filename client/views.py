@@ -51,8 +51,3 @@ def SolvedCases(request):
     return render(request,'client/s.html',sol)
 
 
-def MoveComplaint(request,id):
-    result=Pending.objects.get(id=id)
-    result.save(using='sol')
-    return SolvedCases(request)
-

@@ -45,6 +45,21 @@ def UpdateComplaint(request,id):
     return render(request,'client/update_complaint.html',update)
 
 
+def move(request,id):
+    table1 = Pending.objects.get(id=id)
+    
+    Solved.objects.create(
+        name       = table1.name,
+        fathername = table1.fathername,
+        age = table1.age,
+        causeofcomplaint = table1.causeofcomplaint,
+        contact = table1.contact,
+        )
+    result = Pending.objects.get(id=id)
+    result.delete()
+    return homepage(request)
+
+
 def SolvedCases(request):
     result=Solved.objects.all()
     sol={'allsolved':result}

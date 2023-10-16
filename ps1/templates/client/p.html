@@ -18,7 +18,7 @@
         <th>Cause Of Complaint</th>
         <th>Contact</th>
         <th>Actions</th>
-        <th>Solved</th>
+        <th> Status </th>
         </tr>
         {% for i in allpending %}
         <tr>
@@ -31,7 +31,7 @@
         <td><a href="/u/{{i.id}}">Update</a>/
             <a href="/d/{{i.id}}">Delete</a>
         </td>
-        <td><a href="/s/{{i.id}}">Click here</a></td>
+        <td><a href="/move/{{i.id}}">Solved</a></td>
         </tr>
          {% endfor %}       
     </table>

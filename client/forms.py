@@ -5,3 +5,4 @@ class ComplaintForm(forms.ModelForm):
     class Meta:
         model= Pending
         fields= '__all__'
+

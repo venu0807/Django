@@ -7,4 +7,30 @@
     <link rel="stylesheet" href="{% static  "stylesheets/style.css" %}"/>
 </head>
 <body>
-    <h1>Team2</h1>
+    <h1>Team2</h1><br><br><br>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Father Name</th>
+            <th>Age</th>
+            <th>Batch</th>
+            <th>Role</th>
+            <th>Contact</th>
+        </tr>
+        {% for i in allofficers1 %}
+    
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.fathername}}</td>
+            <td>{{i.age}}</td>
+            <td>{{i.batch}}</td>
+            <td>{{i.role}}</td>
+            <td>{{i.contact}}</td>
+        </tr>
+        {% endfor %}
+    </table><br><br>
+    <div class="ac">
+        <a href="/add">Add Officer</a>
+    </div>
+</body>
+</html>

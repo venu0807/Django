@@ -16,7 +16,7 @@ def T2(request):
     team={'allofficers2':result}
     return render(request,'officer/t2.html',team)
 
-def add(request):
+def Add(request):
     form = AddofficerForm
     cform = {'form':form}
 
@@ -25,4 +25,4 @@ def add(request):
         if form.is_valid():
             form.save()
             return homepage(request)
-    return render(request,'officer/add.html')
+    return render(request,'officer/add.html',cform)

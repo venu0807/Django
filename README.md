@@ -1,5 +1,4 @@
 ﻿# Django Project
- # Django Project
 
 Welcome to the Django Project! This project is designed to help you get started with Django development.
 

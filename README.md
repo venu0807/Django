@@ -8,53 +8,29 @@ To get started with the project, follow these steps:
 
 1. Clone the repository:
 
-
+    git clone https://github.com/yourusername/django-project.git
 ​
-git clone https://github.com/yourusername/django-project.git
-​
-
-
 2. Change into the project directory:
 
-
+    cd django-project
 ​
-cd django-project
-​
-
-
 3. Create a virtual environment and activate it:
 
-
+    python3 -m venv venv
+    source venv/bin/activate
 ​
-python3 -m venv venv
-source venv/bin/activate
-​
-
-
 4. Install the required packages:
 
-
+    pip install -r requirements.txt
 ​
-pip install -r requirements.txt
-​
-
-
 5. Apply the initial migrations:
 
-
+    python manage.py migrate
 ​
-python manage.py migrate
-​
-
-
 6. Start the development server:
 
-
+    python manage.py runserver
 ​
-python manage.py runserver
-​
-
-
 7. Open your browser and navigate to http://localhost:8000 to view the project.
 
 ## Contributing

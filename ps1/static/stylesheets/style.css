@@ -2,12 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
-#head.h1{
-    color: white;
-}
-
-
 .module{
     border: 1px solid rgb(93, 87, 87);
     width: 30%;
@@ -16,4 +10,14 @@
     margin: 20px;
     text-align: center;
     margin-left:13%;
+}
+h1{
+    color: white;
+    text-align: center;
+    background-color: rgb(219, 112, 18);
+}
+
+.ac{
+    text-align: center;
+    text-decoration: none;
 }

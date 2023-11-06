@@ -11,13 +11,40 @@
     text-align: center;
     margin-left:13%;
 }
-h1{
+
+.module h1{
     color: white;
-    text-align: center;
-    background-color: rgb(219, 112, 18);
+    background-color: teal;
 }
 
-.ac{
-    text-align: center;
+.left-module{
     text-decoration: none;
+    color: black;
+}
+
+.right-module{
+    text-decoration: none;
+    color: black;
+}
+
+.head h1{
+    color: white;
+    text-align: center;
+    background-color:teal;
+}
+
+.ac a{
+    text-decoration: none;
+    margin-left: 95vb;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.ac{
+    text-decoration: none;
+    margin-left: 95vb;
 }

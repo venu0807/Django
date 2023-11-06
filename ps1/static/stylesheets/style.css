@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+.head{
+  display: flex;  
+  justify-content: center;
+  background-color: rgb(20, 20, 82);
+  color: white;
+}
+
+.module{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    border: 1px solid black;
+    align-items: center;
+    height: 20rem;
+    width: 20rem;
+    margin: 1rem 10rem 5rem 15rem;
+}
+
+.module h1{
+    background-color: rgb(10, 10, 68);
+    color: white;
+    width: 20rem;
+    text-align: center;
+}
+.module a{
+    margin:1.4rem;
+    text-decoration: none;
+    color: black;
+}
+h2{
+    text-align: center;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.ac{
+    display: flex;
+    justify-content: center;
+}

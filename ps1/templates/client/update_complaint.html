@@ -15,11 +15,13 @@
      </div>
 
     <form method="post">
-    <table>
+    <table class="form">
         {{form.as_table}}
-    </table><br>
-
-    <input type="submit" value="Update Complaint"/>
+    </table>
+    
+    <div class='ac'>
+        <input type="submit" value="Update Complaint"/>
+    </div>
 
     {% csrf_token %}
     

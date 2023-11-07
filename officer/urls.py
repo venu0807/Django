@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 from officer.views import homepage
-from officer.views import T1,T2,Add,Add2,Delete_Officer1,Delete_Officer2
+from officer.views import T1,T2,Add,Add2,Delete_Officer1,Delete_Officer2,search_feature
 
 urlpatterns = [
     path('',homepage),
@@ -11,4 +11,5 @@ urlpatterns = [
     path('add2/',Add2),
     path('d1/<int:id>/',Delete_Officer1),
     path('d2/<int:id>/',Delete_Officer2),
+    path('search/',search_feature,name='search-view'),
 ]

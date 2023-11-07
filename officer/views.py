@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from officer.models import Team1,Team2
 from officer.forms import AddofficerForm,AddofficerForm2
-from client.models import Pending
 from django.db.models import Q
 
 def homepage(request):
@@ -54,7 +53,7 @@ def Delete_Officer2(request,id):
 def search_feature(request):
     if request.method == 'POST':
         search_query = request.POST['search_query']
-        posts = Team1.objects.filter(name__contains=search_query)
+        posts = Team1.objects.filter(name__contains=search_query) or Team2.objects.filter(name__contains=search_query)
         return render(request, 'officer/search.html', {'query':search_query, 'posts':posts})
     else:
         return render(request, 'officer/search.html',{})

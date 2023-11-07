@@ -38,3 +38,14 @@ def Add2(request):
             form.save()
             return homepage(request)
     return render(request,'officer/add.html',cform)
+
+def Delete_Officer1(request,id):
+    result=Team1.objects.get(id=id)
+    result.delete()
+    return homepage(request)
+
+
+def Delete_Officer2(request,id):
+    result=Team2.objects.get(id=id)
+    result.delete()
+    return homepage(request)

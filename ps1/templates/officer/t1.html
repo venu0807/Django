@@ -25,6 +25,7 @@
             <th scope="col">Batch</th>
             <th scope="col">Role</th>
             <th scope="col">Contact</th>
+            <th scope="col">Action</th>
           </tr>
         </thead>
         <tbody>
@@ -37,6 +38,7 @@
             <td>{{i.batch}}</td>
             <td>{{i.role}}</td>
             <td>{{i.contact}}</td>
+            <td><a href="/d1/{{i.id}}">Delete</a></td>
           </tr>
             {% endfor %}
         </tbody>

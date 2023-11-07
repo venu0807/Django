@@ -64,14 +64,3 @@ def SolvedCases(request):
     result=Solved.objects.all()
     sol={'allsolved':result}
     return render(request,'client/s.html',sol)
-        
-
-def Search_complaint(request):
-    """ search function  """
-    if request.method == "POST":
-        query_name = request.POST.get('name', None)
-        if query_name:
-            results = Pending.objects.filter(name__contains=query_name)
-            return render(request, 'complaint-search.html', {"results":results})
-
-    return render(request, 'complaint-search.html')

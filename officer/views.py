@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from officer.models import Team1,Team2
 from officer.forms import AddofficerForm,AddofficerForm2
+from client.models import Pending
 
 def homepage(request):
     return render(request,'index.html')

@@ -64,7 +64,7 @@ def SolvedCases(request):
     result=Solved.objects.all()
     sol={'allsolved':result}
     return render(request,'client/s.html',sol)
-
+        
 
 def Search_complaint(request):
     """ search function  """

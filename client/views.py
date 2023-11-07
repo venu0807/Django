@@ -64,3 +64,12 @@ def SolvedCases(request):
     result=Solved.objects.all()
     sol={'allsolved':result}
     return render(request,'client/s.html',sol)
+
+
+def search_feature(request):
+    if request.method == 'POST':
+        search_query = request.POST['search_query']
+        posts = Pending.objects.filter(name__contains=search_query) or Solved.objects.filter(name__contains=search_query)
+        return render(request, 'client/search.html', {'query':search_query, 'posts':posts})
+    else:
+        return render(request, 'client/search.html',{})

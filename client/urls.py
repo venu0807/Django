@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path
-from client.views import Complaint,PendingCases,SolvedCases,DeleteComplaint,UpdateComplaint,move
+from client.views import Complaint,PendingCases,SolvedCases,DeleteComplaint,UpdateComplaint,move,search_feature
 
 urlpatterns = [
     path('c/',Complaint),
@@ -9,4 +9,5 @@ urlpatterns = [
     path('d/<int:id>/',DeleteComplaint),
     path('u/<int:id>/',UpdateComplaint),
     path('move/<int:id>/',move),
+    path('search/',search_feature,name='search-view'),
 ]

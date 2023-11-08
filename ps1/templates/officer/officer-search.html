@@ -12,11 +12,11 @@
 <body>
   {% include 'navbar.html' %}
 
-{% if query %}
+{% if querys %}
     <div>
         <div>
         <!-- check if there is a result in the database-->
-        {% if posts %}
+        {% if post %}
             <!-- loop through search query if there is a result -->
             <table class="table">
                 <thead>
@@ -31,7 +31,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                    {% for i in posts %}
+                    {% for i in post %}
                   <tr>
                     <td>{{i.id}}</td>  
                     <td>{{i.name}}</td>

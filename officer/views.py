@@ -54,6 +54,6 @@ def search_feature(request):
     if request.method == 'POST':
         search_query = request.POST['search_query']
         posts = Team1.objects.filter(name__contains=search_query) or Team2.objects.filter(name__contains=search_query)
-        return render(request, 'officer/officer-search.html', {'query':search_query, 'posts':posts})
+        return render(request, 'officer/officer-search.html', {'querys':search_query, 'post':posts})
     else:
         return render(request, 'officer/officer-search.html',{})

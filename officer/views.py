@@ -50,7 +50,7 @@ def Delete_Officer2(request,id):
     result.delete()
     return homepage(request)
 
-def search_feature(request):
+def search_feature_officer(request):
     if request.method == 'POST':
         search_query = request.POST['search_query']
         posts = Team1.objects.filter(name__contains=search_query) or Team2.objects.filter(name__contains=search_query)

@@ -66,7 +66,7 @@ def SolvedCases(request):
     return render(request,'client/s.html',sol)
 
 
-def search_feature(request):
+def search_feature_client(request):
     if request.method == 'POST':
         search_query = request.POST['search_query']
         posts = Pending.objects.filter(name__contains=search_query) or Solved.objects.filter(name__contains=search_query)

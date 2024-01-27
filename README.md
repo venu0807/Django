@@ -10,7 +10,7 @@ To get started with the project, follow these steps:
 
     
     
-    git clone https://github.com/yourusername/django-project.git
+    git clone https://github.com/venu0807/django-project.git
 
 
 ​
